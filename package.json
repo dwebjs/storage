@@ -1,0 +1,37 @@
+{
+  "name": "@dwebjs/storage",
+  "description": "Key Storage Library for dWeb 2.0",
+  "version": "1.0.0",
+  "contributors": [
+    "Jared Rice Sr. <jared@dpeeps.com>",
+    "Peeps Labs <labs@dpeeps.com>"
+  ],
+  "bugs": {
+    "url": "https://github.com/dwebjs/storage/issues"
+  },
+  "dependencies": {
+    "@dwebjs/ddrive": "dwebjs/ddrive#storage",
+    "@dwebjs/secret-storage": "dwebjs/secret-storage#master",
+    "append-tree": "^2.0.5",
+    "multi-random-access": "^2.0.3",
+    "random-access-file": "^2.0.1"
+  },
+  "devDependencies": {
+    "standard": "^10.0.2"
+  },
+  "homepage": "https://dwebs.io",
+  "keywords": [
+    "dweb",
+    "distributed-web",
+    "dweb-storage"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dwebjs/storage.git"
+  },
+  "scripts": {
+    "test": "standard"
+  }
+}
