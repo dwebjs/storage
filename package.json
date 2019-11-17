@@ -1,37 +1,38 @@
 {
-    "name": "@dwebjs/storage",
-    "description": "Key Storage Library for dWeb 2.0",
+    "name": "@dwebjs/secret-storage",
+    "description": "Library for storing dWeb-based secret keys.",
     "version": "1.0.0",
     "contributors": [
         "Jared Rice Sr. <jared@dpeeps.com>",
         "Peeps Labs <labs@dpeeps.com>"
     ],
     "bugs": {
-        "url": "https://github.com/dwebjs/storage/issues"
+        "url": "https://github.com/dwebjs/secret-storage/issues"
     },
     "dependencies": {
-        "@dwebjs/ddrive": "@dwebjs/ddrive#master",
-        "@dwebjs/secret-storage": "dwebjs/secret-storage#master",
-        "append-tree": "^2.0.5",
-        "multi-random-access": "^2.0.3",
-        "random-access-file": "^2.0.1"
+        "os-homedir": "^1.0.2",
+        "random-access-file": "^1.5.0"
     },
     "devDependencies": {
-        "standard": "^10.0.2"
+        "@dwebjs/ddrive": "dwebjs/secret-storage#master",
+        "random-access-memory": "^2.3.0",
+        "standard": "*",
+        "tap-spec": "^4.0.2",
+        "tape": "^4.0.0"
     },
     "homepage": "https://dwebs.io",
     "keywords": [
         "dweb",
         "distributed-web",
-        "dweb-storage"
+        "dweb-secret-storage"
     ],
     "license": "MIT",
     "main": "index.js",
     "repository": {
         "type": "git",
-        "url": "https://github.com/dwebjs/storage.git"
+        "url": "git+https://github.com/dwebjs/secret-storage.git"
     },
     "scripts": {
-        "test": "standard"
+        "test": "standard && tape test /*.js | tap-spec"
     }
 }
